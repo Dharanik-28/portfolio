@@ -93,7 +93,13 @@ export default function Hero() {
         transition={{ type: 'spring', stiffness: 60, damping: 14, delay: 0.25 }}
       >
         {imgOk ? (
-          <img src="/profile.png" alt="Portrait of Kakara Dharani" onError={() => setImgOk(false)} />
+       
+<img
+  src={`${import.meta.env.BASE_URL}profile.png`}
+  alt="Portrait of Kakara Dharani"
+  onError={() => setImgOk(false)}
+/>
+
         ) : (
           <span className="initials" aria-hidden>KD</span>
         )}
