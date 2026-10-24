@@ -61,7 +61,7 @@ export default function Hero() {
       <motion.div className="blob b2" style={{ x: blob2X, y: blob2Y }} />
       <div className="hero-text">
         <motion.p {...up(0.05)} className="live">
-          <span className="pulse" /> Open to full-stack & AI/ML roles
+          <span className="pulse" /> Open to full-stack
         </motion.p>
         <motion.p {...up(0.12)} className="hi">Hello, I’m</motion.p>
         <motion.h1 {...up(0.2)}>{profile.name}</motion.h1>
@@ -93,7 +93,7 @@ export default function Hero() {
         transition={{ type: 'spring', stiffness: 60, damping: 14, delay: 0.25 }}
       >
         {imgOk ? (
-       
+         
 <img
   src={`${import.meta.env.BASE_URL}profile.png`}
   alt="Portrait of Kakara Dharani"
